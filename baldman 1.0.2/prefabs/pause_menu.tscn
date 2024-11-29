@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://7qwvs6lldn66"]
+
+[sub_resource type="Theme" id="Theme_p4ysp"]
+Button/colors/font_focus_color = Color(1, 1, 0, 1)
+Button/colors/font_hover_color = Color(1, 1, 0, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+Button/colors/font_pressed_color = Color(0.917647, 0.545098, 0, 1)
+Button/fonts/font = null
+
+[node name="pause_menu" type="CanvasLayer"]
+
+[node name="bg_overlay" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.00392157, 0.00392157, 0.00392157, 0.254902)
+
+[node name="menu_holder" type="VBoxContainer" parent="."]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -33.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="resume_btn" type="Button" parent="menu_holder"]
+layout_mode = 2
+theme = SubResource("Theme_p4ysp")
+text = "RESUME"
+
+[node name="quit_btn" type="Button" parent="menu_holder"]
+layout_mode = 2
+text = "QUIT GAME"

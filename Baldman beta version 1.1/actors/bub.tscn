@@ -1,0 +1,75 @@
+[gd_scene load_steps=11 format=3 uid="uid://b4skfay7bwjsi"]
+
+[ext_resource type="Texture2D" uid="uid://dsqq4d867525n" path="res://assets/Sprite Pack 1/11 - Spikey Bub/Running (16 x 16).png" id="1_glc1s"]
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="2_oy1pi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_00by5"]
+atlas = ExtResource("1_glc1s")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_in21y"]
+atlas = ExtResource("1_glc1s")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2j2rh"]
+atlas = ExtResource("1_glc1s")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4pdsf"]
+atlas = ExtResource("1_glc1s")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b2qjc"]
+atlas = ExtResource("1_glc1s")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yjbjl"]
+atlas = ExtResource("1_glc1s")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6ej4f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_00by5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_in21y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2j2rh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4pdsf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b2qjc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yjbjl")
+}],
+"loop": true,
+"name": &"run",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hv4og"]
+size = Vector2(12, 13)
+
+[node name="bub" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="enemy" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_6ej4f")
+animation = &"run"
+autoplay = "run"
+frame_progress = 0.516019
+script = ExtResource("2_oy1pi")
+
+[node name="collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_hv4og")
+
+[node name="wall_detector" type="RayCast2D" parent="."]
+target_position = Vector2(-7, 0)

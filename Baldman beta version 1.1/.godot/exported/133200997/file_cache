@@ -1,0 +1,13 @@
+res://actors/bub.tscn::4a50fdd29348e472fdf0793e86c8bfee::1732655705::res://.godot/exported/133200997/export-919fd1f11f3a5a2447da6e3fb73a57c3-bub.scn
+res://actors/enemy.tscn::c5668e9929a97dce09a2dce6192f23d7::1732742132::res://.godot/exported/133200997/export-61e27e8a0642b62a00179865da5b591c-enemy.scn
+res://actors/player.tscn::0da6850de5cb7f7b4496168fa0887343::1732477214::res://.godot/exported/133200997/export-e86f95e5088e93066d258d9192ab0748-player.scn
+res://actors/teste.tscn::371d8a0add92d4acbc8269a8cdf2276e::1732729235::res://.godot/exported/133200997/export-920ee1f4c40dbd80298570bf94cf03a8-teste.scn
+res://levels/wolrd_1.tscn::272b18339c33d0563b5811c9bbd3cec2::1732742132::res://.godot/exported/133200997/export-5468b7a86ebc9c87e03b6051bf9782f7-wolrd_1.scn
+res://prefabs/coin.tscn::469cd88140a6a71a38414eb5c54a98f3::1732742132::res://.godot/exported/133200997/export-39bbc9b86d6ff472dbd608d74c2b3efc-coin.scn
+res://prefabs/hitbox.tscn::5055e3d2a68d148322fd9192e4c10f76::1732742132::res://.godot/exported/133200997/export-5e61a6088dbfe8a801584a03fb1f0aa8-hitbox.scn
+res://prefabs/moving_platform.tscn::5ce3dc17b32048c5ab376437e6ca7127::1732742132::res://.godot/exported/133200997/export-b8b4dc3182f88a6c2aaba450ed03da50-moving_platform.scn
+res://prefabs/pause_menu.tscn::a7a24e9e5577ce1d0b2202f867f69803::1732742132::res://.godot/exported/133200997/export-c43a75ce232219e652145b532a63709b-pause_menu.scn
+res://prefabs/gameover.tscn::759866fbf50e69c645e601246cb57c79::1732742132::res://.godot/exported/133200997/export-9fe2156c7a2840bd03e84423bf0c41ee-gameover.scn
+res://prefabs/title_screen.tscn::ecc8b84535b6ec7c0d247a900158b8f4::1732742141::res://.godot/exported/133200997/export-0f29b64d4f0d75ae9ec4b76fe8cfc7de-title_screen.scn
+res://default_bus_layout.tres::d4cc2d1c2a14539fdc75aad1d2d32152::1732729022::res://.godot/exported/133200997/export-19246414aa9fb561ced4b8dce477acec-default_bus_layout.res
+res://pause_menu.tres::631cd836b74143f9cdcda0e8d4af22ef::1732486660::res://.godot/exported/133200997/export-f70ff4f5f0b884056c6739f7652c7518-pause_menu.res

@@ -1,0 +1,6 @@
+res://levels/wolrd_1.tscn
+res://prefabs/moving_platform.tscn
+res://prefabs/coin.tscn
+res://actors/enemy.tscn
+res://prefabs/pause_menu.tscn
+res://scripts/player.gd

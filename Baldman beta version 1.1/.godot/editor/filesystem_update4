@@ -1,0 +1,8 @@
+res://prefabs/title_screen.tscn
+res://prefabs/moving_platform.tscn
+res://prefabs/coin.tscn
+res://actors/enemy.tscn
+res://prefabs/pause_menu.tscn
+res://prefabs/hitbox.tscn
+res://prefabs/gameover.tscn
+res://levels/wolrd_1.tscn

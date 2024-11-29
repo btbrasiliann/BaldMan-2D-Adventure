@@ -1,0 +1,60 @@
+[gd_scene load_steps=9 format=3 uid="uid://do1l0c47qeapx"]
+
+[ext_resource type="Texture2D" uid="uid://kcyka8tfajbl" path="res://assets/Sprite Pack 1/5 - Devo the Devil/Running (16 x 16).png" id="1_3kp6b"]
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_oxvnt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bl6se"]
+atlas = ExtResource("1_3kp6b")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nd7mu"]
+atlas = ExtResource("1_3kp6b")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8mcap"]
+atlas = ExtResource("1_3kp6b")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_olw2n"]
+atlas = ExtResource("1_3kp6b")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_idsjk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bl6se")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nd7mu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8mcap")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_olw2n")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2gunp"]
+size = Vector2(14, 14.5)
+
+[node name="enemy" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_oxvnt")
+
+[node name="enemy" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_idsjk")
+animation = &"run"
+autoplay = "run"
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_2gunp")
+
+[node name="wall_detector" type="RayCast2D" parent="."]
+target_position = Vector2(-7, 0)
+collision_mask = 6
